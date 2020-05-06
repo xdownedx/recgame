@@ -56,15 +56,39 @@
 		72202EB9246323F900F55E88 /* Found Game */ = {
 			isa = PBXGroup;
 			children = (
-				72202EBA246323F900F55E88 /* AppDelegate.swift */,
-				72202EBC246323F900F55E88 /* SceneDelegate.swift */,
-				72202EBE246323F900F55E88 /* ViewController.swift */,
-				72202EC0246323F900F55E88 /* Main.storyboard */,
+				72202ECE2463242C00F55E88 /* delegate */,
+				72202ECF2463244E00F55E88 /* controller */,
+				72202ED02463246C00F55E88 /* storyboard */,
 				72202EC32463240100F55E88 /* Assets.xcassets */,
-				72202EC52463240100F55E88 /* LaunchScreen.storyboard */,
 				72202EC82463240100F55E88 /* Info.plist */,
 			);
 			path = "Found Game";
+			sourceTree = "<group>";
+		};
+		72202ECE2463242C00F55E88 /* delegate */ = {
+			isa = PBXGroup;
+			children = (
+				72202EBA246323F900F55E88 /* AppDelegate.swift */,
+				72202EBC246323F900F55E88 /* SceneDelegate.swift */,
+			);
+			path = delegate;
+			sourceTree = "<group>";
+		};
+		72202ECF2463244E00F55E88 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				72202EBE246323F900F55E88 /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		72202ED02463246C00F55E88 /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				72202EC0246323F900F55E88 /* Main.storyboard */,
+				72202EC52463240100F55E88 /* LaunchScreen.storyboard */,
+			);
+			path = storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +311,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7SPANA493T;
 				INFOPLIST_FILE = "Found Game/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7SPANA493T;
 				INFOPLIST_FILE = "Found Game/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

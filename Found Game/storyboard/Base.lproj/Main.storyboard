@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Found_Game" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="113" translatesAutoresizingMaskIntoConstraints="NO" id="FgT-j8-5ez">
+                                <rect key="frame" x="40" y="70" width="295" height="527"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F/|\G" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nbB-bN-7t8">
+                                        <rect key="frame" x="83" y="0.0" width="129.5" height="75"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="55"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="dPM-cM-LMK">
+                                        <rect key="frame" x="0.0" y="188" width="295" height="196"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bXM-dt-qsr">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="31" id="ySp-Ju-by2"/>
+                                                </constraints>
+                                                <segments>
+                                                    <segment title="Авторизация"/>
+                                                    <segment title="Регистрация"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="segmentedControlAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="351-Ve-Ghx"/>
+                                                </connections>
+                                            </segmentedControl>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="21" translatesAutoresizingMaskIntoConstraints="NO" id="1jH-jp-C8W">
+                                                <rect key="frame" x="0.0" y="52" width="295" height="144"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Электронная почта" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rZR-IO-mS3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="295" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="34" id="Z56-Zy-ZiX"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dpw-xU-Z2p">
+                                                        <rect key="frame" x="0.0" y="55" width="295" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="34" id="a7j-er-hli"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password">
+                                                            <passwordRules key="passwordRules" passwordRulesDescriptor="Придумайте сложный пароль от 6 символов"/>
+                                                        </textInputTraits>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Подтверждение пароля" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gts-Z0-dXk">
+                                                        <rect key="frame" x="0.0" y="110" width="295" height="34"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="34" id="EU4-0C-gmI"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="new-password"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXm-zZ-WVn">
+                                        <rect key="frame" x="80" y="497" width="135" height="30"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="135" id="GCT-6G-DsD"/>
+                                            <constraint firstAttribute="height" constant="30" id="efg-Xt-QGq"/>
+                                        </constraints>
+                                        <state key="normal" title="Авторизоваться">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Za-LK-azB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dPM-cM-LMK" firstAttribute="leading" secondItem="FgT-j8-5ez" secondAttribute="leading" id="AzK-jq-vgy"/>
+                                    <constraint firstAttribute="trailing" secondItem="vXm-zZ-WVn" secondAttribute="trailing" constant="80" id="a8y-3v-iJH"/>
+                                    <constraint firstAttribute="trailing" secondItem="dPM-cM-LMK" secondAttribute="trailing" id="gUC-kW-epF"/>
+                                    <constraint firstItem="vXm-zZ-WVn" firstAttribute="leading" secondItem="FgT-j8-5ez" secondAttribute="leading" constant="80" id="lrV-8T-eSv"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FgT-j8-5ez" secondAttribute="trailing" constant="40" id="IL2-mL-IP7"/>
+                            <constraint firstItem="FgT-j8-5ez" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="OrC-Y9-8zN"/>
+                            <constraint firstItem="FgT-j8-5ez" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="ucn-5N-FOE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FgT-j8-5ez" secondAttribute="bottom" priority="999" constant="70" id="vFu-ER-tpH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmPasswordTF" destination="gts-Z0-dXk" id="NK2-dn-huc"/>
+                        <outlet property="emailTF" destination="rZR-IO-mS3" id="epJ-V3-DO8"/>
+                        <outlet property="loginButton" destination="vXm-zZ-WVn" id="gjc-td-J4j"/>
+                        <outlet property="passwordTF" destination="dpw-xU-Z2p" id="4MP-94-0qa"/>
+                        <outlet property="segmentedControl" destination="bXM-dt-qsr" id="RY3-q0-A24"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="109.29535232383809"/>
+        </scene>
+    </scenes>
+</document>
